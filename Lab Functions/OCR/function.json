@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "outcontainer/{name}",
+      "connection": "dxnextappservica892_STORAGE"
+    },
+    {
+      "type": "table",
+      "name": "outputTable",
+      "tableName": "ImageText",
+      "connection": "dxnextappservica892_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
